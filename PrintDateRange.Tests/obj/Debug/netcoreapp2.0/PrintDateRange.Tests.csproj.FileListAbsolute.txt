@@ -1,0 +1,17 @@
+E:\PrintDate\PrintDateRange.Tests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+E:\PrintDate\PrintDateRange.Tests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+E:\PrintDate\PrintDateRange.Tests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+E:\PrintDate\PrintDateRange.Tests\bin\Debug\netcoreapp2.0\PrintDateRange.Tests.deps.json
+E:\PrintDate\PrintDateRange.Tests\bin\Debug\netcoreapp2.0\PrintDateRange.Tests.runtimeconfig.json
+E:\PrintDate\PrintDateRange.Tests\bin\Debug\netcoreapp2.0\PrintDateRange.Tests.runtimeconfig.dev.json
+E:\PrintDate\PrintDateRange.Tests\bin\Debug\netcoreapp2.0\PrintDateRange.Tests.dll
+E:\PrintDate\PrintDateRange.Tests\bin\Debug\netcoreapp2.0\PrintDateRange.Tests.pdb
+E:\PrintDate\PrintDateRange.Tests\bin\Debug\netcoreapp2.0\PrintDateRange.dll
+E:\PrintDate\PrintDateRange.Tests\bin\Debug\netcoreapp2.0\PrintDateRange.pdb
+E:\PrintDate\PrintDateRange.Tests\obj\Debug\netcoreapp2.0\PrintDateRange.Tests.csprojResolveAssemblyReference.cache
+E:\PrintDate\PrintDateRange.Tests\obj\Debug\netcoreapp2.0\PrintDateRange.Tests.csproj.CoreCompileInputs.cache
+E:\PrintDate\PrintDateRange.Tests\obj\Debug\netcoreapp2.0\PrintDateRange.Tests.AssemblyInfoInputs.cache
+E:\PrintDate\PrintDateRange.Tests\obj\Debug\netcoreapp2.0\PrintDateRange.Tests.AssemblyInfo.cs
+E:\PrintDate\PrintDateRange.Tests\obj\Debug\netcoreapp2.0\PrintDateRange.Tests.csproj.CopyComplete
+E:\PrintDate\PrintDateRange.Tests\obj\Debug\netcoreapp2.0\PrintDateRange.Tests.dll
+E:\PrintDate\PrintDateRange.Tests\obj\Debug\netcoreapp2.0\PrintDateRange.Tests.pdb
