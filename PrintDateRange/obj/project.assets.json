@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PrintDateRange\\PrintDateRange.csproj",
+      "projectUniqueName": "E:\\PrintDate\\PrintDateRange\\PrintDateRange.csproj",
       "projectName": "PrintDateRange",
-      "projectPath": "E:\\PrintDateRange\\PrintDateRange.csproj",
+      "projectPath": "E:\\PrintDate\\PrintDateRange\\PrintDateRange.csproj",
       "packagesPath": "C:\\Users\\JM\\.nuget\\packages\\",
-      "outputPath": "E:\\PrintDateRange\\obj\\",
+      "outputPath": "E:\\PrintDate\\PrintDateRange\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
