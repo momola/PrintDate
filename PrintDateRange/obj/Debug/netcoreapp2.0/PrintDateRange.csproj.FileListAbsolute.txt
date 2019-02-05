@@ -8,3 +8,4 @@ E:\PrintDate\PrintDateRange\obj\Debug\netcoreapp2.0\PrintDateRange.AssemblyInfoI
 E:\PrintDate\PrintDateRange\obj\Debug\netcoreapp2.0\PrintDateRange.AssemblyInfo.cs
 E:\PrintDate\PrintDateRange\obj\Debug\netcoreapp2.0\PrintDateRange.dll
 E:\PrintDate\PrintDateRange\obj\Debug\netcoreapp2.0\PrintDateRange.pdb
+E:\PrintDate\PrintDateRange\obj\Debug\netcoreapp2.0\PrintDateRange.csprojResolveAssemblyReference.cache
