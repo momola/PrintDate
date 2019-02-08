@@ -14,7 +14,7 @@ namespace PrintDateRange
 
         public string CreateRange(DateTime firstDate, DateTime secondDate)
         {
-            SetGreaterDateAsSecond(firstDate, secondDate);
+            SetGreaterDateAsSecond(ref firstDate, ref secondDate);
             string format = "dd.MM.yyyy";
 
             if(firstDate.Year != secondDate.Year)
@@ -49,9 +49,9 @@ namespace PrintDateRange
             Console.WriteLine(SecondDate);
         }
         
-        private void SetGreaterDateAsSecond(DateTime firstDate, DateTime secondDate)
+        private void SetGreaterDateAsSecond(ref DateTime firstDate, ref DateTime secondDate)
         {
-           int result = DateTime.Compare(firstDate, secondDate);
+            int result = DateTime.Compare(firstDate, secondDate);
             if(result > 0)
             {
                 var temp= firstDate;

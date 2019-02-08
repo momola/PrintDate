@@ -26,7 +26,7 @@ namespace PrintDateRange
                     Range= new DateRange(firstDate, secondDate);
                     Range.FullDate = Range.CreateRange(Range.FirstDate, Range.SecondDate);
 
-                     Console.WriteLine(Range.FullDate);
+                    Console.WriteLine(Range.FullDate);
                     //Range.PrintRange();
                 }
             
