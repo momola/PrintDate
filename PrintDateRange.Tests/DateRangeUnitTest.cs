@@ -19,17 +19,5 @@ namespace PrintDateRange.Tests
 
             Assert.Equal(expectedRange, range.FullDate);
         }
-
-        [Theory]
-        [InlineData("05.07.2018", "02.07.2018")]
-        public void GetChangeFirstAndSecondDateTest(string firstDate, string secondDate)
-        {   
-            DateRange range = new DateRange(DateRange.ConvertToDate(firstDate), DateRange.ConvertToDate(secondDate));
-            var date1= DateRange.ConvertToDate(firstDate);
-            var date2= DateRange.ConvertToDate(secondDate);
-            range.SetGreaterDateAsSecond(ref date1, ref date2);
-
-            Assert.Equal(date2.ToString("dd.MM.yyyy"), range.FirstDate.ToString("dd.MM.yyyy"));
-        }
     }
 }
