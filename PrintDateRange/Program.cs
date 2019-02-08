@@ -24,7 +24,9 @@ namespace PrintDateRange
                 else
                 {     
                     Range= new DateRange(firstDate, secondDate);
-                    Range.PrintRange();
+                   
+                     Console.WriteLine(Range.CreateRange());
+                    //Range.PrintRange();
                 }
             
             }
