@@ -49,7 +49,7 @@ namespace PrintDateRange
             Console.WriteLine(SecondDate);
         }
         
-        private void SetGreaterDateAsSecond(ref DateTime firstDate, ref DateTime secondDate)
+        public void SetGreaterDateAsSecond(ref DateTime firstDate, ref DateTime secondDate)
         {
             int result = DateTime.Compare(firstDate, secondDate);
             if(result > 0)
