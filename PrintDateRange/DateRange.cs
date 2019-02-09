@@ -16,7 +16,7 @@ namespace PrintDateRange
         {
             SetGreaterDateAsSecond(ref firstDate, ref secondDate);
             string format = "dd.MM.yyyy";
-
+            string tempFormat;             
             if(firstDate.Year != secondDate.Year)
             {
                 return firstDate.ToString(format) + " - " + secondDate.ToString(format);
@@ -25,15 +25,15 @@ namespace PrintDateRange
             {
                 if(firstDate.Month != secondDate.Month)
                 {
-                     string format2 = "dd.MM";
-                     return firstDate.ToString(format2) + " - " + secondDate.ToString(format);
+                     tempFormat = "dd.MM";
+                     return firstDate.ToString(tempFormat) + " - " + secondDate.ToString(format);
                 }
                 else
                 {
                     if(firstDate.Day != secondDate.Day)
                     {
-                        string format2 = "dd";
-                        return firstDate.ToString(format2) + " - " + secondDate.ToString(format);
+                        tempFormat = "dd";
+                        return firstDate.ToString(tempFormat) + " - " + secondDate.ToString(format);
                     }
                     else
                     {
