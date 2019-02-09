@@ -42,12 +42,6 @@ namespace PrintDateRange
                 }
             }
         }
-
-        public void PrintRange()
-        {
-            Console.WriteLine(FirstDate);
-            Console.WriteLine(SecondDate);
-        }
         
         private void SetGreaterDateAsSecond(ref DateTime firstDate, ref DateTime secondDate)
         {
