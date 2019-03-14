@@ -13,9 +13,9 @@ namespace PrintDateRange.Tests
         [InlineData("02/03/2018", "02/07/2018", "02.03 - 02.07.2018")]
         [InlineData("02/03/2017", "02/07/2018", "02.03.2017 - 02.07.2018")]
         public void GetCorrectRangeTest(string firstDate, string secondDate, string expectedRange)
-        {   
+        {
             DateRange range = new DateRange(DateRange.ConvertToDate(firstDate), DateRange.ConvertToDate(secondDate));
-            range.FullDate = range.CreateRange(range.FirstDate, range.SecondDate);
+            range.FullDate = range.CreateRange();
 
             Assert.Equal(expectedRange, range.FullDate);
         }
