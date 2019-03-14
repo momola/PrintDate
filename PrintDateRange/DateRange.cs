@@ -1,7 +1,7 @@
 using System;
 namespace PrintDateRange
 {
-    public class DateRange  
+    public class DateRange
     {
         public DateTime FirstDate {get; private set;}
         public DateTime SecondDate {get; private set;}
@@ -12,51 +12,50 @@ namespace PrintDateRange
             this.SecondDate = SecondDate;
         }
 
-        public string CreateRange(DateTime firstDate, DateTime secondDate)
+        public string CreateRange()
         {
-            SetGreaterDateAsSecond(ref firstDate, ref secondDate);
-            string format = "dd.MM.yyyy";
-            string tempFormat;             
-            if(firstDate.Year != secondDate.Year)
+            SetGreaterDateAsSecond();
+            string mainFormat = "dd.MM.yyyy";
+            string ddMMformat = "dd.MM";
+            string ddFormat = "dd";
+            if(FirstDate.Year != SecondDate.Year)
             {
-                return firstDate.ToString(format) + " - " + secondDate.ToString(format);
+                return FirstDate.ToString(mainFormat) + " - " + SecondDate.ToString(mainFormat);
             }
             else
             {
-                if(firstDate.Month != secondDate.Month)
+                if(FirstDate.Month != SecondDate.Month)
                 {
-                     tempFormat = "dd.MM";
-                     return firstDate.ToString(tempFormat) + " - " + secondDate.ToString(format);
+                     return FirstDate.ToString(ddMMformat) + " - " + SecondDate.ToString(mainFormat);
                 }
                 else
                 {
-                    if(firstDate.Day != secondDate.Day)
+                    if(FirstDate.Day != SecondDate.Day)
                     {
-                        tempFormat = "dd";
-                        return firstDate.ToString(tempFormat) + " - " + secondDate.ToString(format);
+                        return FirstDate.ToString(ddFormat) + " - " + SecondDate.ToString(mainFormat);
                     }
                     else
                     {
-                        return firstDate.ToString(format);
+                        return FirstDate.ToString(mainFormat);
                     }
                 }
             }
         }
-        
-        private void SetGreaterDateAsSecond(ref DateTime firstDate, ref DateTime secondDate)
+
+        private void SetGreaterDateAsSecond()
         {
-            int result = DateTime.Compare(firstDate, secondDate);
+            int result = DateTime.Compare(this.FirstDate, this.SecondDate);
             if(result > 0)
             {
-                var temp= firstDate;
-                firstDate =secondDate;
-                secondDate = temp;
+                var temp= this.FirstDate;
+                this.FirstDate =this.SecondDate;
+                this.SecondDate = temp;
             }
         }
-        
+
         public static DateTime ConvertToDate(string dateString)
         {
-            DateTime.TryParse(dateString, out var date);           
+            DateTime.TryParse(dateString, out var date);
             return date;
         }
     }

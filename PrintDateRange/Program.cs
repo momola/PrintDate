@@ -3,14 +3,14 @@
 namespace PrintDateRange
 {
     class Program
-    { 
+    {
         private static DateRange range;
 
         public static DateRange Range { get => range; set => range = value; }
 
         static void Main(string[] args)
         {
-            
+
             if(args.Length != 2)
             {
                 Console.WriteLine("Please enter a dates");
@@ -19,16 +19,16 @@ namespace PrintDateRange
             {
                 if ( !(DateTime.TryParse(args[0], out var firstDate) && DateTime.TryParse(args[1], out var secondDate) ) )
                 {
-                    Console.WriteLine("Wrong values!"); 
+                    Console.WriteLine("Wrong values!");
                 }
                 else
-                {     
+                {
                     Range= new DateRange(firstDate, secondDate);
-                    Range.FullDate = Range.CreateRange(Range.FirstDate, Range.SecondDate);
+                    Range.FullDate = Range.CreateRange();
 
                     Console.WriteLine(Range.FullDate);
                 }
-            
+
             }
 
         }
